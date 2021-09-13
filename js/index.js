@@ -1,7 +1,9 @@
-var preloader = document.getElementById('loading');
+var preloader = document.getElementById('preloaderScreen');
 
 function loadingScreen() {
-    preloader.style.display = 'none';
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    console.log("LOADED");
 }
 
 $(function(){

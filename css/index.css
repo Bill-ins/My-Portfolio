@@ -16,40 +16,6 @@ html {
 .headings h4  {
     font-family: 'Poppins', sans-serif;
 }
-
-.allblue {
-    color: #2E8BC0 !important;
-}
-
-.blueLine {
-    display: inline-block;
-    position: relative;
-    top: -10px;
-    left: 10px;
-    border: 0;
-    background-color: #65c3ba;
-    width: 300px;
-    height: 1.5px;
-}
-
-.blueLineBefore {
-    display: none;
-    position: relative;
-    top: -10px;
-    right: 10px;
-    border: 0;
-    background-color: #65c3ba;
-    height: 1.5px;
-}
-
-.underLine {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-/* .bracketClose {
-    font-size: 40px;
-    margin-top: 50px;
-} */
 /* Additional Changes Ends Here */
 
 /* Navigation Starts Here */
@@ -123,16 +89,8 @@ html {
 }
 
 .deskNav .social a:hover {
-    /* background-color: white; */
     color: white;
 }
-
-/* .deskNav .myPhoto h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 20px;
-    color: #B1D4E0;
-} */
 
 .deskNav .available {
     font-size: 13px;
@@ -209,6 +167,16 @@ header .headings h2 {
     animation-duration: 1s;
     font-family: 'Montserrat';
     color: #2E8BC0;
+}
+
+header .headings hr {
+    background-color: #2E8BC0;
+    border: none;
+    width: 100px;
+    height: 1.5px;
+    position: relative;
+    top: -5px;
+    display: inline-block;
 }
 
 header .headings h1 {
@@ -295,26 +263,17 @@ header .scroll-container .line hr {
 /* Website Body Starts Here */
 /* Summary Section Starts Here */
 #summary {
-    padding: 100px 0 100px;
+    padding: 100px 4.5% 150px;
     background-color: white;
     min-height: 100vh;
-}
-
-#summary .roundImage {
-    display: none;
 }
 
 #summary img {
     width: 100%;
     display: block;
     position: relative;
-    top: 35px;
-    left: 35px;
-}
-
-#summary .headings,
-#summary .content {
-    padding: 0 4.5%;
+    top: 30px;
+    left: 30px;
 }
 
 #summary .headings h2 {
@@ -341,65 +300,86 @@ header .scroll-container .line hr {
 }
 
 #summary .image {
-    width: 23%;
-    border: 7px solid #05141f;
+    margin-top: 60px;
+    width: 25%;
+    border: 7px solid #0C2D48;
 }
 
 #summary .text {
-    width: 50%;
+    width: 60%;
 }
 
-#summary .text ul {
-    width: 100%;
+#summary .text h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
-#summary .text ul li{
-    font-size: 15px;
-    /* margin-top: 15px; */
-    color: gray;
+#summary .text p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    margin-top: 30px;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
 }
 
-#summary .text ul li span{
-    font-weight: 900;
-    color: gray;
+#summary .text p span {
+    font-style: italic;
+    color: #145DA0;
 }
 
-#summary .text ul {
-    margin-bottom: 30px;
-}
-
-#summary .text a {
+#summary .text p .contactMe {
     text-decoration: none;
-    padding: 10px 40px;
-    border-radius: 50px;
-    transition: 300ms;
+    font-weight: 800;
+    color: #000;
+}
+
+#summary .text p .contactMe:hover {
+    color: gray;
+}
+
+#summary .skills {
+    margin: 50px auto 0;
+}
+
+#summary .skills h3 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#summary .skills .boxes {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#summary .skills .boxes .smBox {
+    display: inline-block;
+    padding: 10px 20px;
     font-size: 14px;
+    font-weight: 700;
+    background-color: #e9e9e9;
+    margin: 10px 10px 0 0;
 }
 
-#summary .text .resumecontainer {
-    border-top: 2px solid #65c3ba;
-    padding: 50px 0 20px 0;
-    padding-left: 10%;
-    margin-left: 40%;
+#summary .resumecontainer {
+    margin-top: 60px;
 }
 
-#summary .text .resume {
-    background-color: #65c3ba;
+#summary .resume {
+    background-color: black;
     color: white;
-    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-#summary .text .resume:hover {
-    background-color: rgba(128, 128, 128, 0.7);
-}
-
-#summary .text .work {
-    background-color: gray;
-    color: white;
-}
-
-#summary .text .work:hover {
-    background-color: #65c3ba;
+#summary .resume:hover {
+    color: lightgrey;
 }
 /* Summary Section Ends Here */
 
@@ -1128,7 +1108,7 @@ footer .flexBox .thankyou .interview {
 }
 
 footer .social img {
-    max-width: 100px;
+    max-width: 120px;
 }
 
 footer .social {
@@ -1170,35 +1150,6 @@ footer .social .links .linkedin {
     padding-left: 20px;
     border-left: 1px solid gray;
 }
-
-/* footer .social a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    display: inline-block;
-    height: 27px;
-    width: 27px;
-    border-radius: 3px;
-    padding-top: 1px;
-    background-color: rgba(255, 255, 255, 1);
-    color: white;
-}
-
-footer .social a:hover {
-    background-color: #B1D4E0;
-}
-
-footer .social a:hover .fa {
-    color: #0C2D48;
-}
-
-footer .social .github {
-    background-color: #6e5494;
-}
-
-footer .social .linkedin {
-    background-color: #0077b5;
-} */
 /* Website Footer Ends Here */
 
 
@@ -1296,10 +1247,6 @@ footer .social .linkedin {
     header .headings {
         top: 130px;
     }
-
-    header .headings  h2 {
-        font-size: 30px;
-    }
     
     header .headings  h1 {
         font-size: 50px;
@@ -1307,7 +1254,7 @@ footer .social .linkedin {
     }
     
     header .headings  h3 {
-        font-size: 20px;
+        /* font-size: 20px; */
         /* margin-top: 20px; */
     }
     /* Website Header Ends Here #_Tablet_Devices */
@@ -1323,45 +1270,13 @@ footer .social .linkedin {
     }
     
     #summary .image {
-        width: 200px;
-        margin-left: 10px;
+        width: 40%;
+        max-width: 260px;
+        margin: 0px 25px 60px 0px;
     }
 
     #summary .text {
         width: 100%;
-        padding-top: 300px;
-    }
-
-    #summary .info {
-        top: 250px;
-        width: 340px;
-        left: auto;
-        right: 10px;
-    }
-
-    #summary .text h3 {
-        width: 60%;
-        /* padding-top: 50px; */
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 45%;
-        /* padding-left: 350px; */
-        text-align: left;
-        margin-bottom: 30px;
-    }
-
-    #summary .text ul {
-        text-align: left;
-        padding-left: 30px;
-        padding-top: 0px;
-    }
-
-    #summary .text .resumecontainer {
-        width: 90%;
-        margin: 0 auto;
-        padding-left: 0;
-        text-align: center;
-        /* position: absolute; */
     }
     /* Summary Section Ends Here #_Tablet_Devices */
 
@@ -1448,45 +1363,6 @@ footer .social .linkedin {
 
 /* Media Queries For Mobile Devices */
 @media only screen and (max-width: 760px) {
-    /* Additional Changes Starts Here */
-    .blueLine {
-        /* display: none; */
-        width: 17%;
-    }
-
-    .blueLineBefore {
-        display: inline-block;
-        width: 17%;
-    }
-
-    #portfolio .blueLine,
-    #portfolio .blueLineBefore {
-        width: 12%;
-    }
-
-    footer .blueLine,
-    footer .blueLineBefore {
-        width: 15%;
-    }
-
-    .topLeftHeading {
-        position: absolute;
-        padding: 5px;
-    }
-    
-    .topLeftHeading span {
-        display: inline;    
-        transform: rotate(0deg);
-        margin: 0;
-        font-size: 14px;
-        margin-left: -3px;
-    }
-
-    .topLeftHeading span:first-child {
-        margin: 0;
-    }
-    /* Additional Changes Ends Here */
-
     /* Navigation Starts Here */
     .mobNav {
         background-color: #05141f;
@@ -1563,7 +1439,6 @@ footer .social .linkedin {
     /* Website Header Starts Here #_Mobile_Devices */
     header {
         padding-top: 150px;
-        min-height: 600px;
     }
 
     header .headings {
@@ -1573,7 +1448,12 @@ footer .social .linkedin {
     }
 
     header .headings h2 {
-        font-size: 25px;
+        font-size: 15px;
+    }
+
+    header .headings hr {
+        width: 50px;
+        top: -3px;
     }
 
     header .headings h1 {
@@ -1582,7 +1462,7 @@ footer .social .linkedin {
     }
 
     header .headings h3 {
-        font-size: 20px;
+        font-size: 17px;
         margin-top: 10px;
     }
 
@@ -1594,9 +1474,7 @@ footer .social .linkedin {
     /* Website Body Starts Here #_Mobile_Devices */
     /* Summary Section Starts Here #_Mobile_Devices */
     #summary {
-        /* padding: 80px 4.5% 80px; */
-        padding-bottom: 80px;
-        padding-top: 80px;
+        padding: 80px 4.5% 80px;
     }
 
     #summary .headings {
@@ -1611,74 +1489,41 @@ footer .social .linkedin {
         font-size: 13px;
     }
 
-    #summary .image {
-        display: none;
-    }
-
     #summary .content {
-        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #summary img {
-        border-radius: 100%;
-    }
-
-    #summary .info {
-        position: static;
+    #summary .image {
         width: 90%;
-        max-width: 300px;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        font-size: 13px;
+        max-width: 250px;
     }
 
-    #summary .roundImage {
-        max-width: 200px;
-        margin: 0 auto;
-        display: block;
-        padding: 5px;
-        border-radius: 100%;
-        background-color: white;
-        border: 1px solid gray;
-        position: relative;
-        z-index: 1;
+    #summary .text h4 {
+        font-size: 17px;
+        margin-bottom: 15px;
     }
 
-    #summary .text {
-        margin-top: 100px;
-        padding: 0;
-    }
-
-    #summary .text h3 {
-        text-align: center;
-        padding: 0;
-        margin-bottom: 30px;
-        padding-top: 100px;
-        padding-bottom: 10px;
-        position: absolute;
-        width: 100%;
-        top: 480px;
-        z-index: 0;
-    }
-
-    #summary .text ul {
-        margin-bottom: 30px;
-        padding-top: 0px;
+    #summary .text p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-top: 15px;
     }
 
     #summary .text ul li{
         font-size: 13px;
     }
 
-    #summary .text a {
-        display: block;
-        padding: 6px;
+    #summary .skills h3 {
+        font-size: 17px;
+    }
+    
+    #summary .skills .boxes .smBox {
         font-size: 13px;
     }
 
     #summary .text .resume {
-        margin-right: 0px;
-        margin-bottom: 20px;
+        font-size: 14px;
     }
     /* Summary Section Ends Here #_Mobile_Devices */
 
@@ -2010,15 +1855,21 @@ footer .social .linkedin {
 
 
 
+/* ******************************************************************************************** */
+/* ******************************************************************************************** */
+/* ******************************************************************************************** */
+
+/* Custom Preloading Screen Starts Here */
 @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
-#loading {
+#preloaderScreen {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: #000;
   z-index: 9999;
+  transition: 1000ms;
 }
 
 .loading-text {
@@ -2092,3 +1943,4 @@ footer .social .linkedin {
     filter: blur(4px);
   }
 }
+/* Custom Preloading Screen Ends Here */
